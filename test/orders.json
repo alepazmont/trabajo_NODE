@@ -1,0 +1,110 @@
+[
+    {
+      "user": "john_doe",
+      "products": ["product_001", "product_002"],
+      "total_price": 50.98,
+      "paid": true,
+      "shipping_address": "123 Main Street",
+      "shipping_cost": 5.99,
+      "free_shipping": false,
+      "order_date": "2024-03-16T12:00:00Z",
+      "delivery_date": "2024-03-22T12:00:00Z",
+      "order_status": "delivered"
+    },
+    {
+      "user": "jane_smith",
+      "products": ["product_003"],
+      "total_price": 29.99,
+      "paid": false,
+      "shipping_address": "456 Elm Street",
+      "shipping_cost": 5.99,
+      "free_shipping": false,
+      "order_date": "2024-03-15T12:00:00Z",
+      "delivery_date": null,
+      "order_status": "pending"
+    },
+    {
+      "user": "bob_williams",
+      "products": ["product_004"],
+      "total_price": 15.99,
+      "paid": true,
+      "shipping_address": "101 Pine Street",
+      "shipping_cost": 5.99,
+      "free_shipping": false,
+      "order_date": "2024-03-14T12:00:00Z",
+      "delivery_date": "2024-03-20T12:00:00Z",
+      "order_status": "delivered"
+    },
+    {
+      "user": "emily_jackson",
+      "products": ["product_005", "product_006"],
+      "total_price": 90.97,
+      "paid": true,
+      "shipping_address": "202 Maple Avenue",
+      "shipping_cost": 5.99,
+      "free_shipping": false,
+      "order_date": "2024-03-12T12:00:00Z",
+      "delivery_date": "2024-03-18T12:00:00Z",
+      "order_status": "delivered"
+    },
+    {
+      "user": "susan_johnson",
+      "products": [],
+      "total_price": 0,
+      "paid": false,
+      "shipping_address": "303 Cedar Street",
+      "shipping_cost": 5.99,
+      "free_shipping": false,
+      "order_date": "2024-03-10T12:00:00Z",
+      "delivery_date": null,
+      "order_status": "pending"
+    },
+    {
+      "user": "michael_adams",
+      "products": ["product_007"],
+      "total_price": 34.99,
+      "paid": true,
+      "shipping_address": "404 Elm Street",
+      "shipping_cost": 5.99,
+      "free_shipping": false,
+      "order_date": "2024-03-09T12:00:00Z",
+      "delivery_date": "2024-03-15T12:00:00Z",
+      "order_status": "delivered"
+    },
+    {
+      "user": "laura_miller",
+      "products": ["product_008", "product_009"],
+      "total_price": 89.98,
+      "paid": true,
+      "shipping_address": "505 Oakwood Lane",
+      "shipping_cost": 5.99,
+      "free_shipping": false,
+      "order_date": "2024-03-07T12:00:00Z",
+      "delivery_date": "2024-03-13T12:00:00Z",
+      "order_status": "delivered"
+    },
+    {
+      "user": "chris_wilson",
+      "products": ["product_010", "product_001", "product_003"],
+      "total_price": 125.96,
+      "paid": false,
+      "shipping_address": "606 Pinecrest Drive",
+      "shipping_cost": 5.99,
+      "free_shipping": false,
+      "order_date": "2024-03-05T12:00:00Z",
+      "delivery_date": null,
+      "order_status": "pending"
+    },
+    {
+      "user": "alice_green",
+      "products": ["product_004"],
+      "total_price": 15.99,
+      "paid": true,
+      "shipping_address": "789 Oak Street",
+      "shipping_cost": 5.99,
+      "free_shipping": false,
+      "order_date": "2024-03-03T12:00:00Z",
+      "delivery_date": "2024-03-09T12:00:00Z",
+      "order_status": "delivered"
+    }
+]

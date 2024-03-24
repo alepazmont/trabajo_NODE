@@ -1,0 +1,358 @@
+{
+	"info": {
+		"_postman_id": "118ce52b-2f2a-4952-854a-90391966c1d9",
+		"name": "tienda_ficticia",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33245704"
+	},
+	"item": [
+		{
+			"name": "user/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n      \"username\": \"laura_miller\",\n      \"name\": \"Laura\",\n      \"lastname\": \"Miller\",\n      \"password\": \"laurapass\",\n      \"email\": \"laura.miller@example.com\",\n      \"phone\": \"+5566778899\",\n      \"birthday\": \"1983-12-12\",\n      \"adress\": \"505 Oakwood Lane\",\n      \"paymentData\": \"Transferencia\",\n      \"order\": []\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/user/register",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n          \"username\": \"emily_jackson\",\n      \"name\": \"Emily\",\n      \"lastname\": \"Jackson\",\n      \"password\": \"emilypass\",\n      \"email\": \"emily.jackson@example.com\",\n      \"phone\": \"+3344556677\",\n      \"birthday\": \"1998-12-05\",\n      \"adress\": \"202 Maple Avenue\",\n      \"paymentData\": \"Tarjeta\",\n      \"order\": []\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/user/register",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user/authenticate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n      \"username\": \"john_doe\",\n      \"name\": \"John\",\n      \"lastname\": \"Doe\",\n      \"password\": \"password123\",\n      \"email\": \"john.doe@example.com\",\n      \"phone\": \"+1234567890\",\n      \"birthday\": \"1985-07-15\",\n      \"adress\": \"123 Main Street\",\n      \"paymentData\": \"Tarjeta\",\n      \"orders\": [\"order_001\"]\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/user/authenticate",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"authenticate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user/users",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/user/users",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "product/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "category",
+							"value": "Sports",
+							"type": "text"
+						},
+						{
+							"key": "product_name",
+							"value": "Yoga Mat",
+							"type": "text"
+						},
+						{
+							"key": "brand",
+							"value": "FlexFitness",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "39.99",
+							"type": "text"
+						},
+						{
+							"key": "color",
+							"value": "Purple",
+							"type": "text"
+						},
+						{
+							"key": "size",
+							"value": "null",
+							"type": "text"
+						},
+						{
+							"key": "material",
+							"value": "PVC",
+							"type": "text"
+						},
+						{
+							"key": "dimensions",
+							"value": "180x60 cm",
+							"type": "text"
+						},
+						{
+							"key": "stock",
+							"value": "25",
+							"type": "text"
+						},
+						{
+							"key": "discount",
+							"value": "15",
+							"type": "text"
+						},
+						{
+							"key": "product_image",
+							"type": "file",
+							"src": "/Users/alepaz/Library/CloudStorage/GoogleDrive-alepazmont@gmail.com/Mi unidad/FORMACION/UPGRADEHUB/CODIGO/CLASES-NODE/ejercicios-node/trabajo_NODE/test/yoga-mat-8mm.webp"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/product/create",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"product",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "product/get",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/product/get/65f612c0de6271e17d050067",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"product",
+						"get",
+						"65f612c0de6271e17d050067"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "product/update",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "product_image",
+							"type": "file",
+							"src": "/Users/alepaz/Downloads/friends-couch.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/product/update/65f60fb91aacea84111d6e89",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"product",
+						"update",
+						"65f60fb91aacea84111d6e89"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "product/getAll",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/product/getAll",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"product",
+						"getAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "order/create",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZjYwZTZmMWFhY2VhODQxMTFkNmU4NCIsInVzZXJuYW1lIjoiam9obl9kb2UiLCJpYXQiOjE3MTA2MjQzOTQsImV4cCI6MTcxMDcxMDc5NH0.NQClJQNsUfB6egEy8R31N3ze0HXCAZ6Hpb7msT_lneI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n      \"user\": \"65f60e6f1aacea84111d6e84\",\n      \"products\": [\"65f612acde6271e17d050065\"],\n      \"total_price\": 15.99,\n      \"paid\": true,\n      \"shipping_address\": \"101 Pine Street\",\n      \"shipping_cost\": 5.99,\n      \"free_shipping\": false,\n      \"order_date\": \"2024-03-14T12:00:00Z\",\n      \"delivery_date\": \"2024-03-20T12:00:00Z\",\n      \"order_status\": \"delivered\"\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/order/create",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"order",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "order/getAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/order/getAll",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"order",
+						"getAll"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
